@@ -36,7 +36,7 @@ public class Task3 {
         JSONArray rains = (JSONArray) hourly.get("rain");
 
         String rowFmt = "%-4s | %-20s | %-13s | %-12s";
-        String sep = "-".repeat(58);
+        String sep = new String(new char[58]).replace('\0', '-');
         StringBuilder sb = new StringBuilder();
         sb.append(sep).append("\n");
         sb.append(String.format(rowFmt, "№", "Дата/время", "Температура", "Осадки (мм)")).append("\n");
