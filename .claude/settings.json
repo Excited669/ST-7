@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(mvn -B package --file /Users/vasilijperaskin/ST-7/pom.xml)",
-      "Bash(mvn --batch-mode --update-snapshots verify --file /Users/vasilijperaskin/ST-7/pom.xml)"
-    ]
-  }
-}
