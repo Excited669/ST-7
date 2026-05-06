@@ -17,7 +17,8 @@ public class App {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
 
-        // Selenium Manager автоматически скачивает нужный ChromeDriver
+        // Укажите путь к chromedriver, если он не находится в PATH
+        // System.setProperty("webdriver.chrome.driver", "/путь/к/chromedriver");
         WebDriver webDriver = new ChromeDriver(options);
 
         try {
